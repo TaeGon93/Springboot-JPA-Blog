@@ -8,11 +8,13 @@ public class UserController {
 
 	@GetMapping("/auth/joinForm")
 	public String joinForm() {
+		System.out.println("조인폼");
 		return "user/joinForm";
 	}
 	
 	@GetMapping("/auth/loginForm")
 	public String loginForm() {
+		System.out.println("로그인폼");
 		return "user/loginForm";
 	}
 }
